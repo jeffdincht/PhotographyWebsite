@@ -9,7 +9,7 @@ import { TesteVComponent } from './teste-v/teste-v.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
     TesteVComponent
   ],
   imports: [
