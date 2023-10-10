@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './master/footer/footer.component';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
@@ -20,7 +20,7 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './master/header/header.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BabyComponent } from './pages/baby/baby.component';
 import { NewbornComponent } from './pages/newborn/newborn.component';
@@ -28,6 +28,8 @@ import { PregnantComponent } from './pages/pregnant/pregnant.component';
 import { FamilyComponent } from './pages/family/family.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { GridComponent } from './components/grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { HomeComponent } from './pages/home/home.component';
     FamilyComponent,
     ContactComponent,
     HomeComponent,
+    CarouselComponent,
+    GridComponent,
   ],
   imports: [
     BrowserModule,
