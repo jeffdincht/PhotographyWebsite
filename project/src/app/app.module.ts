@@ -45,7 +45,6 @@ import { GridComponent } from './components/grid/grid.component';
     HomeComponent,
     CarouselComponent,
     GridComponent,
-    TesteVComponent
   ],
   imports: [
     BrowserModule,
