@@ -17,13 +17,11 @@ nav {
   i:hover {
     color: white;
   }
+  a:active {
+    font-weight: bolder;
+    color: var(--secondary-color);
+  }
 }
-
-// @include media-breakpoint-down(md) {
-//   .nav-end {
-//     align-items: end;
-//   }
-// }
 
 @media only screen and (max-width: 913px) {
   .nav-end {

@@ -24,3 +24,12 @@ footer {
 body {
   font-family: "Nunito", sans-serif;
 }
+h1,
+h2,
+h3 {
+  color: var(--secondary-color);
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
