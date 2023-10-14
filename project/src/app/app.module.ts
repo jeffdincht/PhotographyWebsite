@@ -30,6 +30,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { GridComponent } from './components/grid/grid.component';
+import { GridCategoriesComponent } from './components/grid-categories/grid-categories.component';
+import { CategoryImageComponent } from './components/category-image/category-image.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { GridComponent } from './components/grid/grid.component';
     HomeComponent,
     CarouselComponent,
     GridComponent,
+    GridCategoriesComponent,
+    CategoryImageComponent,
   ],
   imports: [
     BrowserModule,
