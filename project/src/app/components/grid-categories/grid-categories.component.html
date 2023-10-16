@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row justify-content-center my-4 py-4">
+    <div class="col-lg-6 col-md-12 p-2 " *ngFor="let image of images">
+      <app-category-image [image]="image.image " [text]="image.text" [category]="image.category"></app-category-image>
+    </div>
+  </div>
+</div>

@@ -24,3 +24,13 @@ nav {
 //     align-items: end;
 //   }
 // }
+
+@media only screen and (max-width: 913px) {
+  .nav-end {
+    align-items: end !important;
+  }
+  .icons {
+    display: flex;
+    gap: 1rem;
+  }
+}
