@@ -6,7 +6,7 @@
 
 @import "mdb-angular-ui-kit/assets/scss/mdb.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Oxygen:wght@300;400;700&display=swap");
 
 :root {
   --primary-color: #f9e1e5;
@@ -33,4 +33,9 @@ h1 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 2rem;
+}
+p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color);
 }
