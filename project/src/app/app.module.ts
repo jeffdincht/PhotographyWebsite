@@ -32,6 +32,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { GridComponent } from './components/grid/grid.component';
 import { GridCategoriesComponent } from './components/grid-categories/grid-categories.component';
 import { CategoryImageComponent } from './components/category-image/category-image.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,8 @@ import { CategoryImageComponent } from './components/category-image/category-ima
     GridComponent,
     GridCategoriesComponent,
     CategoryImageComponent,
+    ModalComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -69,6 +72,7 @@ import { CategoryImageComponent } from './components/category-image/category-ima
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
