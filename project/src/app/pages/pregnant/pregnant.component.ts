@@ -45,26 +45,41 @@ export class PregnantComponent {
       image: '../../../assets/images/gravida/Cátia_26.jpg',
     },
     {
-      image: '../../../assets/images/gravida/Cátia_41.jpg',
+      image: '../../../assets/images/gravida/horizontal/Cátia_41.jpg',
     },
     {
-      image: '../../../assets/images/gravida/Cátia_56.jpg',
+      image: '../../../assets/images/gravida/horizontal/Cátia_56.jpg',
+    },
+    {
+      image: '../../../assets/images/gravida/horizontal/Cátia_92.jpg',
+    },
+    {
+      image: '../../../assets/images/gravida/horizontal/Cintia_19.jpg',
+    },
+    {
+      image: '../../../assets/images/gravida/horizontal/Clara_11.jpg',
+    },
+    {
+      image: '../../../assets/images/gravida/horizontal/Sessão_37.jpg',
+    },
+
+    {
+      image: '../../../assets/images/gravida/Clara_14.jpg',
+    },
+    {
+      image: '../../../assets/images/gravida/horizontal/Flávia_77.jpg',
     },
     {
       image: '../../../assets/images/gravida/Cátia_71.jpg',
     },
-    {
-      image: '../../../assets/images/gravida/Cátia_92.jpg',
-    },
+
     {
       image: '../../../assets/images/gravida/Cintia_6.jpg',
     },
     {
       image: '../../../assets/images/gravida/Cintia_7.jpg',
     },
-    {
-      image: '../../../assets/images/gravida/Cintia_19.jpg',
-    },
+
     {
       image: '../../../assets/images/gravida/Cintia_21.jpg',
     },
@@ -80,12 +95,7 @@ export class PregnantComponent {
     {
       image: '../../../assets/images/gravida/Clara_9.jpg',
     },
-    {
-      image: '../../../assets/images/gravida/Clara_11.jpg',
-    },
-    {
-      image: '../../../assets/images/gravida/Clara_14.jpg',
-    },
+
     {
       image: '../../../assets/images/gravida/Daniela_5.jpg',
     },
@@ -110,15 +120,11 @@ export class PregnantComponent {
     {
       image: '../../../assets/images/gravida/Flávia_70.jpg',
     },
-    {
-      image: '../../../assets/images/gravida/Flávia_77.jpg',
-    },
+
     {
       image: '../../../assets/images/gravida/Sessão_23.jpg',
     },
-    {
-      image: '../../../assets/images/gravida/Sessão_37.jpg',
-    },
+
     {
       image: '../../../assets/images/gravida/Sessão_48.jpg',
     },
