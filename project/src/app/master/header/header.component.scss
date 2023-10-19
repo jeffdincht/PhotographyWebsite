@@ -17,9 +17,10 @@ nav {
   i:hover {
     color: white;
   }
-  a:active {
+  .active {
     font-weight: bolder;
     color: var(--secondary-color);
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
 
