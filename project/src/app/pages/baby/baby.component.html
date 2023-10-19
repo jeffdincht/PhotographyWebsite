@@ -18,8 +18,7 @@
       <p>Os pais também podem participar na sessão.
       </p>
     </div>
-    <div class="col-lg-4 col-md-12 mb-4" *ngFor="let image of images">
-      <app-grid [image]="image.image "></app-grid>
-    </div>
+    <app-gallery [images]="images">
+    </app-gallery>
   </div>
 </div>

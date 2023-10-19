@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, Input} from '@angular/core';
 import { Image } from 'src/app/Models/images.models';
 import {ImageServiceService} from "../../services/image-service.service";
 
