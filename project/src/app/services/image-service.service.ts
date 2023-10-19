@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Observable} from "rxjs";
 import {Image} from "../Models/images.models";
 
@@ -7,9 +7,10 @@ import {Image} from "../Models/images.models";
 })
 export class ImageServiceService {
 
-  constructor() { }
+  constructor() {
+  }
 
-  getGravidas():Image[]{
+  getGravidas(): Image[] {
     return [
       {
         image: '../../../assets/images/gravida/Beatriz_119.jpg',
@@ -136,6 +137,171 @@ export class ImageServiceService {
       },
       {
         image: '../../../assets/images/gravida/Sessão_50.jpg',
+      },
+    ];
+  }
+
+  getBaby(): Image[] {
+    return [
+      {
+        image: '../../../assets/images/bebe/2meses_13.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/2meses_7.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/2meses_9.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/3meses_11.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/3meses_14.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_1.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_10.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_12.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_2.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_27.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_33.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_8.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/5meses_9.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/6meses_20.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/6meses_24.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/6meses_38.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/7meses_4.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/7meses_5.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/8meses_12.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/8meses_23.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/8meses_3.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/8meses_33.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/8meses_38.jpg',
+      },
+      {
+        image: '../../../assets/images/bebe/8meses_7.jpg',
+      },
+    ];
+  }
+
+  getFamily(): Image[] {
+    return [
+      {
+        image: '../../../assets/images/familia/6meses_43.jpg',
+      },
+      {
+        image: '../../../assets/images/familia/6meses_47.jpg',
+      },
+      {
+        image: '../../../assets/images/familia/6meses_49.jpg',
+      },
+    ];
+  }
+
+  getNewBorn(): Image[] {
+    return [
+      {
+        image: '../../../assets/images/recem-nascido/Martim_4.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_8.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_13.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_19.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_20.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_21.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_23.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_29.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_32.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_33.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_42.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_43.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_44.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_45.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_47.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_49.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Martim_51.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Newborn_26.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Sara_12.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Sara_16.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Sara_21.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Sara_23.jpg',
+      },
+      {
+        image: '../../../assets/images/recem-nascido/Sara_42.jpg',
       },
     ];
   }
