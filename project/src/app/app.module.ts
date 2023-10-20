@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +34,7 @@ import { GridComponent } from './components/grid/grid.component';
 import { GridCategoriesComponent } from './components/grid-categories/grid-categories.component';
 import { CategoryImageComponent } from './components/category-image/category-image.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { ModalComponent } from './components/modal/modal.component';
     GridCategoriesComponent,
     CategoryImageComponent,
     ModalComponent,
+    FormComponent,
 
   ],
   imports: [
@@ -72,7 +75,7 @@ import { ModalComponent } from './components/modal/modal.component';
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
-
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
