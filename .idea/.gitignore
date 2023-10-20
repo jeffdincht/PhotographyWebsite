@@ -3,3 +3,8 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+# Node
+
+/backend/node_modules
+npm-debug.log
+yarn-error.log
