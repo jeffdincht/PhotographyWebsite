@@ -34,6 +34,7 @@ import { GridCategoriesComponent } from './components/grid-categories/grid-categ
 import { CategoryImageComponent } from './components/category-image/category-image.component';
 import { ModalComponent } from './components/modal/modal.component';
 import {NgOptimizedImage} from "@angular/common";
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import {NgOptimizedImage} from "@angular/common";
     GridCategoriesComponent,
     CategoryImageComponent,
     ModalComponent,
+    GalleryComponent,
 
   ],
     imports: [
