@@ -16,6 +16,9 @@ import {
 })
 export class FormComponent {
   validationForm: FormGroup;
+  submitted = false;
+  invalidSubmitted= false;
+
   FormGroup = this.fb.group({
 
       name: "",
@@ -49,22 +52,30 @@ export class FormComponent {
   get message(): AbstractControl {
     return this.validationForm.get('message')!;
   }
-  onSubmit(): void {
-    this.validationForm.markAllAsTouched();
-  }
 
-  async send(){
-    emailjs.init('Livzu7FM2h2V2mHh6');
- let response = await emailjs.send("service_8upp89i","template_3j4kogd",{
- name: this.validationForm.value.name,
-  to_name: this.validationForm.value.to_name,
-  email: this.validationForm.value.email,
-  message: this.validationForm.value.message,
-  });
-  alert("mensagem enviada")
-  this.validationForm.reset();
+ async onSubmit(){
+      if (!this.validationForm.valid) {
+        console.log("Formulário inválido");
+        this.invalidSubmitted= true;
+        return;
+      }
+      console.log("Formulário válido");
+      this.submitted = !this.submitted;
 
-  }
-}
+      emailjs.init('Livzu7FM2h2V2mHh6');
+     let response = await emailjs.send("service_8upp89i","template_3j4kogd",{
+     name: this.validationForm.value.name,
+      to_name: this.validationForm.value.to_name,
+      email: this.validationForm.value.email,
+      message: this.validationForm.value.message,
+      });
+
+      this.validationForm.reset();
+      this.submitted = false;
+
+      }
+
+    }
+
 
 
