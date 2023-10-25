@@ -36,3 +36,22 @@
     z-index: 3;
   }
 }
+
+// @media only screen and (max-width: 913px) {
+//   .text-mobile-category {
+//     position: absolute;
+//     color: black;
+//     background-color: white;
+//   }
+// }
+@media only screen and (max-width: 913px) {
+  .card-image .btn_category {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    background-color: #f9e1e5;
+    border: none;
+    opacity: 1;
+    color: #a86d62;
+  }
+}

@@ -2,25 +2,35 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand d-lg-none" href="" alt="logo" loading="lazy" style="margin-right: 0; padding: 0;">
-        <img src="../../../assets/images/Rosa.png" alt="logo Catarina" style="margin-right: 0;">
+        <img src="../../../assets/images/rosa.png" alt="logo Catarina" style="margin-right: 0;">
       </a>
-      <button class="navbar-toggler" type="button" (click)="noListNav.toggle()" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" (click)="noListNav.toggle()"  aria-expanded="
+        false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup" mdbCollapse
         #noListNav="mdbCollapse">
         <div class="navbar-nav align-items-center nav-end" style="gap:3rem">
-          <a class="nav-link" routerLink="sobre-mim" routerLinkActive="active" aria-current="page">Sobre Mim</a>
-          <a class="nav-link" routerLink="gravidas" routerLinkActive="active">Grávidas</a>
-          <a class="nav-link" routerLink="recem-nascido" routerLinkActive="active">Recém Nascido</a>
+
+          <a class="nav-link" routerLink="sobre-mim" routerLinkActive="active" aria-current="page"
+          (click)="noListNav.toggle()">Sobre Mim</a>
+
+          <a class="nav-link" routerLink="gravidas" routerLinkActive="active" (click)="noListNav.toggle()">Grávidas</a>
+
+          <a class="nav-link" routerLink="recem-nascido" routerLinkActive="active" (click)="noListNav.toggle()">Recém
+            Nascido</a>
+
           <a class="navbar-brand d-none d-lg-flex" routerLink="" alt="logo" loading="lazy"
             style="margin-right: 0; padding: 0;">
-            <img src="../../../assets/images/Rosa.png" alt="logo Catarina" style="margin-right: 0;">
+            <img src="../../../assets/images/rosa.png" alt="logo Catarina" style="margin-right: 0;">
           </a>
-          <a class="nav-link" routerLink="bebe" routerLinkActive="active">Bebé</a>
-          <a class="nav-link" routerLink="familias" routerLinkActive="active">Famílias</a>
-          <a class="nav-link" routerLink="contacto" routerLinkActive="active">Contacto</a>
+
+          <a class="nav-link" routerLink="bebe" routerLinkActive="active" (click)="noListNav.toggle()">Bebé</a>
+
+          <a class="nav-link" routerLink="familias" routerLinkActive="active" (click)="noListNav.toggle()">Famílias</a>
+
+          <a class="nav-link" routerLink="contacto" routerLinkActive="active" (click)="noListNav.toggle()">Contacto</a>
+
           <div class="icons d-flex">
             <a class="nav-link" href="https://www.facebook.com/CatarinaBarbosaFotografia" target="_blank"><i
                 class="fab fa-facebook-square"></i></a>
