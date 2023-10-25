@@ -11,9 +11,7 @@
         toda a vida.
       </p>
     </div>
-    <div class="col-lg-4 col-md-12 mb-4" *ngFor="let image of images">
-      <app-grid [image]="image.image "></app-grid>
-
-    </div>
+    <app-gallery class="family" [images]="images">
+    </app-gallery>
   </div>
 </div>

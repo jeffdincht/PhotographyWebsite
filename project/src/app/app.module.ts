@@ -34,7 +34,10 @@ import { GridComponent } from './components/grid/grid.component';
 import { GridCategoriesComponent } from './components/grid-categories/grid-categories.component';
 import { CategoryImageComponent } from './components/category-image/category-image.component';
 import { ModalComponent } from './components/modal/modal.component';
+import {NgOptimizedImage} from "@angular/common";
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { FormComponent } from './components/form/form.component';
+
 
 @NgModule({
   declarations: [
@@ -53,6 +56,7 @@ import { FormComponent } from './components/form/form.component';
     GridCategoriesComponent,
     CategoryImageComponent,
     ModalComponent,
+    GalleryComponent,
     FormComponent,
 
   ],
@@ -75,6 +79,7 @@ import { FormComponent } from './components/form/form.component';
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
+    NgOptimizedImage,
     ReactiveFormsModule,
   ],
   providers: [],
