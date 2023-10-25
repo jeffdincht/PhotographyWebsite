@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,8 @@ import { CategoryImageComponent } from './components/category-image/category-ima
 import { ModalComponent } from './components/modal/modal.component';
 import {NgOptimizedImage} from "@angular/common";
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { FormComponent } from './components/form/form.component';
+
 
 @NgModule({
   declarations: [
@@ -54,30 +57,31 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     CategoryImageComponent,
     ModalComponent,
     GalleryComponent,
+    FormComponent,
 
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MdbAccordionModule,
-        MdbCarouselModule,
-        MdbCheckboxModule,
-        MdbCollapseModule,
-        MdbDropdownModule,
-        MdbFormsModule,
-        MdbModalModule,
-        MdbPopoverModule,
-        MdbRadioModule,
-        MdbRangeModule,
-        MdbRippleModule,
-        MdbScrollspyModule,
-        MdbTabsModule,
-        MdbTooltipModule,
-        MdbValidationModule,
-        BrowserAnimationsModule,
-        NgOptimizedImage,
-
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MdbAccordionModule,
+    MdbCarouselModule,
+    MdbCheckboxModule,
+    MdbCollapseModule,
+    MdbDropdownModule,
+    MdbFormsModule,
+    MdbModalModule,
+    MdbPopoverModule,
+    MdbRadioModule,
+    MdbRangeModule,
+    MdbRippleModule,
+    MdbScrollspyModule,
+    MdbTabsModule,
+    MdbTooltipModule,
+    MdbValidationModule,
+    BrowserAnimationsModule,
+    NgOptimizedImage,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

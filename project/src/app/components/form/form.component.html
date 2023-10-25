@@ -1,0 +1,52 @@
+<form [formGroup]="validationForm" action="javaScript:void(0)" class="mb-4">
+
+  <!-- Name input -->
+  <mdb-form-control>
+    <input mdbValidate mdbInput type="text" name="Nome" id="formControlLg" formControlName="name"
+      class="form-control form-control-lg mb-4 mt-4" required />
+    <label mdbLabel class="form-label" for="formControlLg">Nome:</label>
+    <mdb-error *ngIf="
+          name?.invalid && (name?.dirty || name?.touched)
+          "><i class="fa-solid fa-xmark" style="color: #f51414;"></i>Digite seu nome</mdb-error>
+    <mdb-success *ngIf="
+          name?.valid && (name?.dirty || name?.touched)
+          "><i class="fa-solid fa-check" style="color: #29c214;"></i></mdb-success>
+  </mdb-form-control>
+
+  <!-- Email input -->
+  <mdb-form-control>
+    <input mdbValidate mdbInput type="email" name="Email" formControlName="email" id="formControlLg"
+      class="form-control form-control-lg mb-4 mt-4" required />
+    <label mdbLabel class="form-label" for="formControlLg">Email:</label>
+
+    <mdb-error *ngIf="
+    email?.invalid && (email?.dirty || email?.touched)
+    "><i class="fa-solid fa-xmark" style="color: #f51414;"></i>Digite seu email</mdb-error>
+    <mdb-success *ngIf="
+    email?.valid && (email?.dirty || email?.touched)
+    "><i class="fa-solid fa-check" style="color: #29c214;"></i></mdb-success>
+  </mdb-form-control>
+
+  <!-- Message input -->
+  <mdb-form-control>
+    <textarea mdbValidate mdbInput class="form-control mb-4 mt-4" formControlName="message" name="Mensagem"
+      id="textAreaExample" rows="6" required></textarea>
+    <label mdbLabel class="form-label" for="textAreaExample">Mensagem</label>
+    <mdb-error *ngIf="
+    message?.invalid && (message?.dirty || message?.touched)
+    "><i class="fa-solid fa-xmark" style="color: #f51414;"></i>Digite 10 ou mais caracteres</mdb-error>
+    <mdb-success *ngIf="
+    message?.valid && (message?.dirty ||message?.touched)
+    "><i class="fa-solid fa-check" style="color: #29c214;"></i></mdb-success>
+  </mdb-form-control>
+
+  <!-- Submit button -->
+  <mdb-form-control>
+    <button type="submit" class="btn btn-block mb-4 fw-bolder" (click)="onSubmit()"
+      [disabled]="!validationForm.valid">ENVIAR</button>
+    <mdb-success *ngIf="validationForm.valid && submitted">
+      <i class="fa-solid fa-check" style="color: #29c214;"></i> Formulário enviado com sucesso!</mdb-success>
+  </mdb-form-control>
+
+
+</form>
