@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Image } from 'src/app/Models/images.models';
-import {ImageServiceService} from "../../services/image-service.service";
+import { CMSImage, CMSNewBornResponse, Image } from 'src/app/Models/images.models';
+import { HygraphService } from 'src/app/services/hygraph.service';
 
 @Component({
   selector: 'app-newborn',
@@ -8,11 +8,18 @@ import {ImageServiceService} from "../../services/image-service.service";
   styleUrls: ['./newborn.component.scss']
 })
 export class NewbornComponent {
-  images!: Image[];
-  constructor(private imgService:ImageServiceService) {
-    this.getImageFromService();
+  images!: CMSImage[];
+  constructor(private HygraphService:HygraphService) {
+    this.HygraphService;
   }
-  getImageFromService(){
-    this.images = this.imgService.getNewBorn();
+  getPhoto(){
+    const response = this.HygraphService.getPhotoNewBorn()
+    .subscribe((response: CMSNewBornResponse): void => {
+
+      this.images = response.data.recemNascidos[0].recemNascidos;
+    });
+  }
+  ngOnInit(): void {
+    this.getPhoto();
   }
 }

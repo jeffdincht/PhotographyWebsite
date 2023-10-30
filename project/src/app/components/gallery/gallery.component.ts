@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Image} from "../../Models/images.models";
+import {Image, CMSImage, CMSPregnantResponse, CMSPregnantImage} from "../../Models/images.models";
 
 @Component({
   selector: 'app-gallery',
@@ -7,6 +7,6 @@ import {Image} from "../../Models/images.models";
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
-  @Input() images!: Image[];
+  @Input() images!: CMSImage[];
 
 }

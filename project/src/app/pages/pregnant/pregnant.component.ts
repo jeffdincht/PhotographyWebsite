@@ -1,6 +1,8 @@
+import { HygraphService } from './../../services/hygraph.service';
 import {Component, inject, Input} from '@angular/core';
-import { Image } from 'src/app/Models/images.models';
-import {ImageServiceService} from "../../services/image-service.service";
+import { CMSPregnantImage,CMSImage, CMSPregnantResponse} from 'src/app/Models/images.models';
+// import {ImageServiceService} from "../../services/image-service.service";
+
 
 @Component({
   selector: 'app-pregnant',
@@ -8,11 +10,25 @@ import {ImageServiceService} from "../../services/image-service.service";
   styleUrls: ['./pregnant.component.scss'],
 })
 export class PregnantComponent {
-  images!: Image[];
-  constructor(private imgService:ImageServiceService) {
-    this.getImageFromService();
+  images!: CMSImage[];
+  constructor(private HygraphService:HygraphService) {
+    this.HygraphService;
   }
-  getImageFromService(){
-    this.images = this.imgService.getGravidas()
+  getPhoto(){
+    const response = this.HygraphService.getPhotoPregnant()
+    .subscribe((response: CMSPregnantResponse): void => {
+
+      this.images = response.data.gravidas.map(gravida=>{
+        return {
+          url: gravida.gravidas.url,
+          id: gravida.gravidas.id,
+        }
+      });
+    });
   }
+  
+  ngOnInit(): void {
+    this.getPhoto();
+  }
+
 }
