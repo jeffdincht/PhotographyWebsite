@@ -12,25 +12,25 @@ export class GridCategoriesComponent {
      category: "gravidas",
       text: 'Grávida',
       image:
-        '../../../assets/images/render-img/clara_11.jpg',
+        'assets/images/render-img/clara_11.jpg',
     },
     {
       category: "recem-nascido",
       text: 'Recém-nascido',
       image:
-        '../../../assets/images/render-img/Martim_51.jpg',
+        'assets/images/render-img/Martim_51.jpg',
     },
     {
       category: "bebe",
       text: 'Bebé',
       image:
-        '../../../assets/images/render-img/7meses_5.jpg',
+        'assets/images/render-img/7meses_5.jpg',
     },
     {
       category: "familias",
       text: 'Famílias',
       image:
-        '../../../assets/images/render-img/6meses_47.jpg',
+        'assets/images/render-img/6meses_47.jpg',
     },
 
 
