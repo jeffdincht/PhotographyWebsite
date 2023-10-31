@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
-import { Image } from 'src/app/Models/images.models';
-import {ImageServiceService} from "../../services/image-service.service";
+import {
+  CMSFamilyResponse,
+  CMSImage,
+  Image,
+} from 'src/app/Models/images.models';
+import { HygraphService } from 'src/app/services/hygraph.service';
 
 @Component({
   selector: 'app-family',
@@ -8,11 +12,18 @@ import {ImageServiceService} from "../../services/image-service.service";
   styleUrls: ['./family.component.scss'],
 })
 export class FamilyComponent {
-  images!: Image[];
-  constructor(private imgService:ImageServiceService) {
-    this.getImageFromService();
+  images!: CMSImage[];
+  constructor(private HygraphService: HygraphService) {
+    this.HygraphService;
   }
-  getImageFromService(){
-    this.images = this.imgService.getFamily()
+  getPhoto() {
+    const response = this.HygraphService.getPhotoFamily().subscribe(
+      (response: CMSFamilyResponse): void => {
+        this.images = response.data.familias[0].familias;
+      }
+    );
+  }
+  ngOnInit(): void {
+    this.getPhoto();
   }
 }

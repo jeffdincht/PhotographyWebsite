@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,10 +35,9 @@ import { GridComponent } from './components/grid/grid.component';
 import { GridCategoriesComponent } from './components/grid-categories/grid-categories.component';
 import { CategoryImageComponent } from './components/category-image/category-image.component';
 import { ModalComponent } from './components/modal/modal.component';
-import {NgOptimizedImage} from "@angular/common";
+import { NgOptimizedImage } from '@angular/common';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FormComponent } from './components/form/form.component';
-
 
 @NgModule({
   declarations: [
@@ -58,7 +58,6 @@ import { FormComponent } from './components/form/form.component';
     ModalComponent,
     GalleryComponent,
     FormComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -81,6 +80,7 @@ import { FormComponent } from './components/form/form.component';
     BrowserAnimationsModule,
     NgOptimizedImage,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
