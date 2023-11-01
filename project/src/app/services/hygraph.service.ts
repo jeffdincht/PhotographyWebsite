@@ -12,7 +12,7 @@ import { environment } from 'src/enviroment/enviroment';
 
 const queryGravida = {
   query: `query {
-    gravidas {
+    gravidas(first: 50) {
       gravidas {
         id
         url
@@ -22,7 +22,7 @@ const queryGravida = {
 };
 const queryBebe = {
   query: `query {
-    bebes {
+    bebes(first: 50) {
       bebes {
         id
         url
@@ -33,7 +33,7 @@ const queryBebe = {
 
 const queryFamilia = {
   query: `query {
-    familias {
+    familias(first: 50) {
       familias {
         id
         url
@@ -44,7 +44,7 @@ const queryFamilia = {
 
 const queryRecemNascido = {
   query: `query {
-    recemNascidos {
+    recemNascidos(first: 50)  {
       recemNascidos {
         id
         url
